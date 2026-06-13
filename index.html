@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Financial Adviser Sunshine Coast | Insurance, Super &amp; Retirement Advice | PLNT Financial</title>
-<meta name="description" content="PLNT Financial is a Sunshine Coast financial advice firm. Personal insurance, superannuation, retirement and investment advice in plain English, including help reviewing the cost of your life and income protection cover. Free first chat.">
+<title>Personal Insurance Adviser Sunshine Coast | PLNT Financial</title>
+<meta name="description" content="PLNT Financial is a Sunshine Coast insurance and financial advice practice. Life, TPD, income protection and super strategy, explained plainly. Free first meeting.">
 <meta name="theme-color" content="#2e3a2c">
 <link rel="icon" type="image/png" href="img/plnt-mark.png">
 <!-- Social sharing — update og:url and og:image to absolute URLs when the domain is live -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="PLNT Financial | Financial Adviser, Sunshine Coast">
-<meta property="og:description" content="Personal insurance, super, retirement and investment advice in plain English. Free, no-obligation first chat.">
+<meta property="og:title" content="PLNT Financial | Insurance &amp; Financial Advice, Sunshine Coast">
+<meta property="og:description" content="Personal insurance, super and retirement advice, built around your story. For people who back themselves.">
 <meta property="og:image" content="img/hero-beach.jpg">
 <meta property="og:locale" content="en_AU">
 <meta name="twitter:card" content="summary_large_image">
@@ -19,11 +19,11 @@
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "name": "PLNT Financial",
-  "description": "Sunshine Coast financial advice firm. Personal insurance, superannuation, retirement planning, investment, aged care and debt advice.",
+  "description": "Sunshine Coast insurance and financial advice practice. Personal insurance (life, TPD, trauma, income protection), superannuation, retirement and investment advice.",
   "address": { "@type": "PostalAddress", "postOfficeBoxNumber": "PO Box 39", "addressLocality": "Palmwoods", "addressRegion": "QLD", "postalCode": "4555", "addressCountry": "AU" },
   "telephone": "+61478078825",
   "email": "james@plntfinancial.com.au",
-  "areaServed": "Sunshine Coast, Queensland",
+  "areaServed": ["Sunshine Coast", "Gold Coast", "Byron Bay", "Queensland"],
   "founder": { "@type": "Person", "name": "James Flannery", "jobTitle": "Financial Adviser" },
   "openingHours": "Mo-Fr 08:30-17:00"
 }
@@ -335,6 +335,37 @@
   .scard .more{font-family:var(--font-ui)}
   .hv-chip{font-family:var(--font-ui)}
   footer h4{font-family:var(--font-mono);font-weight:500;letter-spacing:.16em}
+
+  /* ---------- Engagement (three-tier service model) ---------- */
+  .engage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .ecard{background:#fff;border:1px solid rgba(34,40,34,.1);border-radius:var(--r-md);padding:38px 32px;transition:transform .3s var(--ease),box-shadow .3s}
+  .ecard:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(26,33,26,.1)}
+  .ecard .enum{font-family:var(--font-accent);font-style:italic;font-size:1.25rem;color:var(--forest);display:block;margin-bottom:18px}
+  .ecard h3{font-family:var(--font-display);font-weight:570;font-size:1.22rem;margin-bottom:12px;line-height:1.2}
+  .ecard p{font-size:.93rem;color:var(--ink-soft);line-height:1.6}
+  .engage-foot{text-align:center;margin-top:42px;font-family:var(--font-accent);font-style:italic;font-size:1.25rem;color:var(--forest)}
+
+  /* ---------- Case studies (in the dark stories band) ---------- */
+  .stories-head{font-family:var(--font-display);font-weight:545;font-size:clamp(1.9rem,3.6vw,2.9rem);color:var(--cream);letter-spacing:-.012em;margin-top:18px;max-width:18ch}
+  .stories-head em.accent{color:var(--sage)}
+  .quote-stage{min-height:545px}
+  .cs-cat{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage)}
+  .cs-title{font-family:var(--font-display);font-weight:560;font-size:clamp(1.4rem,2.6vw,2rem);color:var(--cream);margin:14px 0 22px;letter-spacing:-.01em;line-height:1.15}
+  .cs-body{max-width:60ch}
+  .cs-body p{font-size:.97rem;line-height:1.7;color:rgba(246,243,234,.82);margin-bottom:14px}
+  .cs-quote{margin-top:26px;font-family:var(--font-accent);font-style:italic;font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.4;color:var(--sage);max-width:30ch}
+  .cs-disclaimer{margin-top:30px;font-family:var(--font-mono);font-size:.68rem;line-height:1.6;color:rgba(246,243,234,.45);max-width:70ch}
+
+  /* ---------- Footer CTA subtext ---------- */
+  .footer-cta-sub{color:rgba(246,243,234,.7);font-size:1rem;margin-top:12px;max-width:32ch}
+
+  @media (max-width:1020px){
+    .engage-grid{grid-template-columns:1fr;gap:16px}
+    .quote-stage{min-height:560px}
+  }
+  @media (max-width:700px){
+    .quote-stage{min-height:680px}
+  }
 </style>
 </head>
 <body>
@@ -364,10 +395,10 @@
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
   <div class="container">
-    <span class="eyebrow"><span class="ast">✱</span> Financial planning · Sunshine Coast QLD</span>
-    <h1>Making room for your money, and your life, to <em class="accent">grow.</em></h1>
+    <span class="eyebrow"><span class="ast">✱</span> Personal insurance &amp; financial advice · Sunshine Coast QLD</span>
+    <h1>For people who back <em class="accent">themselves.</em></h1>
     <div class="hero-row">
-      <p>PLNT is a Sunshine Coast financial advice firm. Strategic advice on insurance, super, retirement and investing, built around your story and explained in plain English.</p>
+      <p>PLNT is a Sunshine Coast financial advice firm. Personal insurance, superannuation and retirement strategy, built around your story, reviewed properly, and explained without the jargon.</p>
       <div class="hero-cta">
         <a class="btn btn-forest" href="#contact">Book your free chat
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
@@ -470,8 +501,8 @@
         <div class="hv-proof">
           <span class="stars" aria-hidden="true">✱</span>
           <div>
-            <b>Plan clearly. Protect confidently. Grow intentionally.</b>
-            <small>James Flannery · Financial Adviser · BCom (Financial Planning)</small>
+            <b>Advice that starts with your story.</b>
+            <small>James Flannery · Sunshine Coast · Gold Coast · Byron Bay</small>
           </div>
         </div>
       </div>
@@ -484,32 +515,37 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow reveal"><span class="ast">✱</span> What we do</span>
-        <h2 class="reveal">Advice for every <em class="accent">season</em> of life</h2>
+        <span class="eyebrow reveal"><span class="ast">✱</span> Where PLNT can help</span>
+        <h2 class="reveal">Insurance first. Then the <em class="accent">full picture.</em></h2>
       </div>
-      <p class="reveal">Every plan starts with your goals. Here's where we can help.</p>
+      <p class="reveal">Insurance is where most working Australians are most exposed, and most underserved. It's where we start. The rest keeps your full picture current.</p>
     </div>
     <div class="services-grid">
-      <a class="scard scard--pale reveal" href="#contact">
+      <a class="scard scard--forest reveal" href="#contact">
         <svg class="art" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-          <g transform="translate(0,-20)"><!-- golden sun easing into layered hills -->
-          <circle cx="262" cy="148" r="70" fill="#c8a44e" opacity=".92"/>
-          <circle cx="262" cy="148" r="96" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 9" opacity=".5"/>
-          <path d="M-20 236 C 70 198 152 224 232 212 S 380 186 430 204" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-          <path d="M-20 268 C 80 238 170 262 250 250 S 390 226 430 242" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".65"/>
-          <path d="M-20 298 C 90 274 180 296 260 286 S 395 264 430 278" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".4"/>
-          <path d="M247 230 h32 M255 250 h22 M261 270 h13" stroke="#c8a44e" stroke-width="2.6" stroke-linecap="round" opacity=".85"/>
-          <text x="46" y="118" font-size="26" fill="currentColor" opacity=".65" font-family="Georgia,serif">✱</text>
+          <g transform="translate(0,-30)"><!-- a leaf canopy sheltering a seedling from the rain -->
+          <g stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55">
+            <path d="M96 52 l-9 24 M160 40 l-9 24 M228 38 l-9 24 M296 50 l-9 24 M128 84 l-8 22 M262 80 l-8 22 M196 70 l-8 22"/>
+          </g>
+          <path d="M62 196 C 90 110 290 102 338 192 C 290 176 110 178 62 196 Z" fill="currentColor" opacity=".16"/>
+          <path d="M62 196 C 90 110 290 102 338 192" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+          <path d="M62 196 C 130 168 270 166 338 192" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M200 132 V 178" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+          <path d="M138 152 q30 -16 62 -18 M262 150 q-30 -14 -60 -16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".5"/>
+          <path d="M200 178 q0 30 0 56" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M200 286 C 198 268 202 254 200 240" fill="none" stroke="#c8a44e" stroke-width="2.8" stroke-linecap="round"/>
+          <path d="M200 250 q-14 -8 -17 -24 q16 2 17 20 M200 258 q12 -7 15 -22 q-14 2 -15 18" fill="none" stroke="#c8a44e" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M156 288 h88" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".5"/>
           </g>
         </svg>
         <span class="num">( 01 )</span>
         <div class="inner">
-          <h3>Retirement Planning</h3>
-          <p>Model your retirement, settle on your number, and head toward it with a plan we review as life changes.</p>
+          <h3>Personal Insurance</h3>
+          <p>Life, TPD, trauma and income protection. We find the gap between what you have and what you'd actually need, then close it. Most people are underinsured, overcharged, or both.</p>
           <span class="more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="scard scard--forest reveal" data-delay="1" href="#contact">
+      <a class="scard scard--pale reveal" data-delay="1" href="#contact">
         <svg class="art" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
           <g transform="translate(0,-34)"><!-- growth rings, compounding outward from a golden seed -->
           <g fill="none" stroke="currentColor" stroke-linecap="round">
@@ -528,13 +564,32 @@
         <span class="num">( 02 )</span>
         <div class="inner">
           <h3>Superannuation Advice</h3>
-          <p>Fund selection, contribution strategy and structure, so your super works as hard as you do.</p>
+          <p>Contribution strategy, fund selection and structure, so every dollar heading into super is working in the right direction.</p>
           <span class="more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
       <a class="scard scard--sage reveal" data-delay="2" href="#contact">
         <svg class="art" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-          <g transform="translate(0,-24)"><!-- sprouts rising left to right — an organic growth chart -->
+          <g transform="translate(0,-20)"><!-- golden sun easing into layered hills -->
+          <circle cx="262" cy="148" r="70" fill="#c8a44e" opacity=".92"/>
+          <circle cx="262" cy="148" r="96" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 9" opacity=".5"/>
+          <path d="M-20 236 C 70 198 152 224 232 212 S 380 186 430 204" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M-20 268 C 80 238 170 262 250 250 S 390 226 430 242" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".65"/>
+          <path d="M-20 298 C 90 274 180 296 260 286 S 395 264 430 278" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".4"/>
+          <path d="M247 230 h32 M255 250 h22 M261 270 h13" stroke="#c8a44e" stroke-width="2.6" stroke-linecap="round" opacity=".85"/>
+          <text x="46" y="118" font-size="26" fill="currentColor" opacity=".65" font-family="Georgia,serif">✱</text>
+          </g>
+        </svg>
+        <span class="num">( 03 )</span>
+        <div class="inner">
+          <h3>Retirement Planning</h3>
+          <p>Model your retirement, settle on your number, and build a plan we review as life changes. Clarity before the countdown.</p>
+          <span class="more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="scard scard--forest reveal" href="#contact">
+        <svg class="art" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <g transform="translate(0,-24)"><!-- sprouts rising left to right, an organic growth chart -->
           <path d="M40 292 H 372" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".5"/>
           <g fill="none" stroke="currentColor" stroke-linecap="round">
             <path d="M86 292 C 84 270 88 254 86 238" stroke-width="2.6"/>
@@ -552,40 +607,16 @@
           <circle cx="232" cy="292" r="3.5" fill="currentColor"/><circle cx="308" cy="292" r="3.5" fill="#c8a44e"/>
           </g>
         </svg>
-        <span class="num">( 03 )</span>
-        <div class="inner">
-          <h3>Investment Advice</h3>
-          <p>Evidence-based portfolios that match your goals, your timeframe and your comfort with risk.</p>
-          <span class="more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
-        </div>
-      </a>
-      <a class="scard scard--forest reveal" href="#contact">
-        <svg class="art" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-          <g transform="translate(0,-30)"><!-- a leaf canopy sheltering a seedling from the rain -->
-          <g stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55">
-            <path d="M96 52 l-9 24 M160 40 l-9 24 M228 38 l-9 24 M296 50 l-9 24 M128 84 l-8 22 M262 80 l-8 22 M196 70 l-8 22"/>
-          </g>
-          <path d="M62 196 C 90 110 290 102 338 192 C 290 176 110 178 62 196 Z" fill="currentColor" opacity=".16"/>
-          <path d="M62 196 C 90 110 290 102 338 192" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
-          <path d="M62 196 C 130 168 270 166 338 192" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-          <path d="M200 132 V 178" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-          <path d="M138 152 q30 -16 62 -18 M262 150 q-30 -14 -60 -16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".5"/>
-          <path d="M200 178 q0 30 0 56" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-          <path d="M200 286 C 198 268 202 254 200 240" fill="none" stroke="#c8a44e" stroke-width="2.8" stroke-linecap="round"/>
-          <path d="M200 250 q-14 -8 -17 -24 q16 2 17 20 M200 258 q12 -7 15 -22 q-14 2 -15 18" fill="none" stroke="#c8a44e" stroke-width="2.4" stroke-linecap="round"/>
-          <path d="M156 288 h88" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".5"/>
-          </g>
-        </svg>
         <span class="num">( 04 )</span>
         <div class="inner">
-          <h3>Personal Insurance</h3>
-          <p>Life, TPD, trauma and income protection. The right cover, without paying for what you don't need.</p>
+          <h3>Investment Advice</h3>
+          <p>Evidence-based portfolios matched to your goals, your timeframe and your honest comfort with risk. No speculation, no hot tips.</p>
           <span class="more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="scard scard--sage reveal" data-delay="1" href="#contact">
+      <a class="scard scard--pale reveal" data-delay="1" href="#contact">
         <svg class="art" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-          <g transform="translate(0,-38)"><!-- one trunk, three branches — wealth passing down the family tree -->
+          <g transform="translate(0,-38)"><!-- one trunk, three branches, family and care -->
           <path d="M200 300 C 198 268 202 244 200 212" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
           <path d="M200 226 C 172 198 142 184 122 158 M200 212 C 200 186 200 162 200 138 M200 226 C 228 198 258 184 278 158" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
           <circle cx="116" cy="142" r="15" fill="none" stroke="currentColor" stroke-width="2.4"/>
@@ -601,13 +632,13 @@
         <span class="num">( 05 )</span>
         <div class="inner">
           <h3>Aged Care Advice</h3>
-          <p>Calm, clear help with aged care decisions: the costs, the structures and what they mean for the family.</p>
+          <p>Clear, calm guidance through one of the most complex financial decisions a family will face. We make the numbers make sense.</p>
           <span class="more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="scard scard--pale reveal" data-delay="2" href="#contact">
+      <a class="scard scard--sage reveal" data-delay="2" href="#contact">
         <svg class="art" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-          <g transform="translate(0,-18)"><!-- a stream that meanders into a still pool — surplus finding its way -->
+          <g transform="translate(0,-18)"><!-- a stream that meanders into a still pool, surplus finding its way -->
           <g fill="none" stroke="currentColor" stroke-linecap="round">
             <path d="M-20 86 C 80 70 140 122 200 116 S 320 70 430 96" stroke-width="2.6"/>
             <path d="M-20 116 C 80 100 142 152 202 146 S 322 100 430 126" stroke-width="2.1" opacity=".65"/>
@@ -625,12 +656,43 @@
         </svg>
         <span class="num">( 06 )</span>
         <div class="inner">
-          <h3>Debt Management</h3>
-          <p>A structure to pay down debt with intent while you keep building wealth.</p>
+          <h3>Debt Strategy</h3>
+          <p>A structure to pay down debt with intention, without stopping the wealth you're already building.</p>
           <span class="more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- ================= ENGAGEMENT ================= -->
+<section class="section" id="engage">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal"><span class="ast">✱</span> The engagement</span>
+        <h2 class="reveal">How we work <em class="accent">together</em></h2>
+      </div>
+      <p class="reveal">Three ways in. No minimum balance to qualify. Every one of them done by James.</p>
+    </div>
+    <div class="engage-grid">
+      <div class="ecard reveal">
+        <span class="enum">01</span>
+        <h3>Insurance Review &amp; Implementation</h3>
+        <p>A scoped, single engagement. We analyse your current position, design the right structure, implement the cover, and hand you a policy you actually understand. Fixed fee. No ongoing obligation required.</p>
+      </div>
+      <div class="ecard reveal" data-delay="1">
+        <span class="enum">02</span>
+        <h3>Ongoing Advice</h3>
+        <p>For clients who want the full picture kept current: insurance, super, investments and retirement strategy, reviewed annually and adjusted as life changes. Direct access to James throughout.</p>
+      </div>
+      <div class="ecard reveal" data-delay="2">
+        <span class="enum">03</span>
+        <h3>Single-Issue Advice</h3>
+        <p>One question, one answer. A defined engagement on a specific decision: a redundancy payout, a business insurance structure, a super consolidation. Scoped and priced before work begins.</p>
+      </div>
+    </div>
+    <p class="engage-foot reveal">Every piece of work, across all three, is done by James.</p>
   </div>
 </section>
 
@@ -641,14 +703,14 @@
       <div class="section-head">
         <div>
           <span class="eyebrow reveal"><span class="ast">✱</span> Why PLNT</span>
-          <h2 class="reveal">Advice that puts <em class="accent">you</em> first</h2>
+          <h2 class="reveal">Advice that's actually on <em class="accent">your</em> side.</h2>
         </div>
       </div>
       <ul class="benefit-list">
-        <li class="reveal"><span class="ast">✱</span><div><b>Advice that starts with your story</b><p>Before any numbers, we ask what drives you, what you're working towards and who you're doing it for.</p></div></li>
-        <li class="reveal" data-delay="1"><span class="ast">✱</span><div><b>Fixed, transparent fees</b><p>Agreed up front, before any work starts. Nothing hidden.</p></div></li>
-        <li class="reveal"><span class="ast">✱</span><div><b>Technical depth, plain English</b><p>We love the modelling and the moving parts. You get the answer in language that makes sense.</p></div></li>
-        <li class="reveal" data-delay="1"><span class="ast">✱</span><div><b>Ongoing access, not annual hellos</b><p>Ongoing clients can reach James whenever they need, with reviews to keep the plan on track.</p></div></li>
+        <li class="reveal"><span class="ast">✱</span><div><b>Your story first, numbers second</b><p>Before any product recommendations, James asks what you're building toward, what worries you and who you're doing this for. Strategy without that context is just paperwork.</p></div></li>
+        <li class="reveal" data-delay="1"><span class="ast">✱</span><div><b>Fixed fees, agreed up front</b><p>You know what you're paying before any work starts. No trailing surprises.</p></div></li>
+        <li class="reveal"><span class="ast">✱</span><div><b>Technical depth in plain English</b><p>The modelling, the fine print, the edge cases. James handles it all, then gives you the answer in language that lets you decide.</p></div></li>
+        <li class="reveal" data-delay="1"><span class="ast">✱</span><div><b>Access, not appointments</b><p>Ongoing clients reach James directly when they need to, not a call centre. Reviews keep the plan current. Life doesn't wait for annual check-ins.</p></div></li>
       </ul>
     </div>
   </div>
@@ -690,12 +752,13 @@
       <span class="eyebrow reveal"><span class="ast">✱</span> Meet your adviser</span>
       <h2 class="reveal">James <em class="accent">Flannery</em></h2>
       <p class="about-role reveal">Financial Adviser &amp; Director · BCom (Financial Planning)</p>
-      <p class="reveal">James started PLNT on a simple idea: advice lands better when your adviser knows your story. Before any numbers, he'll ask what drives you, what you're working towards and who you're doing it for.</p>
-      <p class="reveal">He has worked in financial services since 2022 and runs every strategy himself, from the first model to the last detail. Clients tend to say two things about him. He cares, and he loves the technical side of the job. Both are true.</p>
-      <p class="reveal">PLNT isn't a stockbroking shop. We're strategists. For everything outside our lane, like mortgages, accounting and legal work, we bring in a trusted local network.</p>
+      <p class="reveal">James started PLNT with a straightforward belief: advice works better when your adviser understands your life before they open a spreadsheet.</p>
+      <p class="reveal">He has worked in financial services since 2022 and handles every strategy personally, from the first model to the final recommendation. Insurance is where most people are most exposed, and most underserved. That's where PLNT puts the most work.</p>
+      <p class="reveal">Clients consistently say two things: he cares, and he's thorough on the technical detail. Both are accurate. For everything outside financial advice, mortgages, tax, legal, James draws on a trusted local network rather than pretending to be all things.</p>
+      <p class="reveal">He works across the Lifestyle Corridor, Gold Coast to Byron Bay to the Sunshine Coast, in person or online, wherever works.</p>
       <div class="creds reveal">
-        <span>BCom (Financial Planning)</span>
-        <span>AR No. 001305935</span>
+        <span>Bachelor of Commerce (Financial Planning)</span>
+        <span>Authorised Representative No. 001305935</span>
         <span>Insight Investment Partners · AFSL 368175</span>
       </div>
       <a class="btn btn-forest reveal" href="#contact">Start with a chat
@@ -711,30 +774,30 @@
     <div class="section-head">
       <div>
         <span class="eyebrow reveal"><span class="ast">✱</span> How it works</span>
-        <h2 class="reveal">From first chat to <em class="accent">flourishing</em></h2>
+        <h2 class="reveal">From first call to <em class="accent">sorted.</em></h2>
       </div>
-      <p class="reveal">A clear four-step process, so you always know where you stand and what happens next.</p>
+      <p class="reveal">Four steps. You always know where you stand and what's next.</p>
     </div>
     <div class="process-grid">
       <div class="pstep reveal">
         <span class="n">01</span>
-        <h3>A first phone call</h3>
-        <p>Tell us where you're at and what's on your mind. We'll tell you straight if we can help.</p>
+        <h3>A first conversation</h3>
+        <p>Tell us where you're at and what's on your mind. We'll tell you honestly if we can help.</p>
       </div>
       <div class="pstep reveal" data-delay="1">
         <span class="n">02</span>
-        <h3>Discovery, on us</h3>
-        <p>A full meeting at no charge to understand your goals and your story, while we gather the detail behind them.</p>
+        <h3>Discovery, at no cost</h3>
+        <p>A full meeting to understand your situation, your goals and your story. We ask the questions that matter before we recommend anything.</p>
       </div>
       <div class="pstep reveal" data-delay="2">
         <span class="n">03</span>
-        <h3>Advice, put to work</h3>
-        <p>We prepare your strategy with fees agreed up front, walk you through it line by line, then handle the implementation.</p>
+        <h3>A strategy, built for you</h3>
+        <p>We prepare your advice with fees agreed up front, walk you through it in detail, then handle the implementation, paperwork and all.</p>
       </div>
       <div class="pstep reveal" data-delay="3">
         <span class="n">04</span>
         <h3>Ongoing care</h3>
-        <p>Annual reviews and ready access to your adviser, so the plan keeps up with your life.</p>
+        <p>Annual reviews plus direct access to James whenever something changes. The plan evolves with you, not just at renewal time.</p>
       </div>
     </div>
   </div>
@@ -744,26 +807,46 @@
 <section id="stories">
   <div class="stories-band">
     <div class="stories-inner">
-      <span class="eyebrow reveal" style="color:var(--sage)"><span class="ast" style="color:var(--sage)">✱</span> What working together looks like</span>
+      <span class="eyebrow reveal" style="color:var(--sage)"><span class="ast" style="color:var(--sage)">✱</span> In practice</span>
+      <h2 class="stories-head reveal">What good advice <em class="accent">actually</em> produces.</h2>
       <div class="quote-stage" id="quoteStage">
         <div class="quote-slide active">
-          <blockquote>A small business owner needed to claim on their insurance. We sat between them and the insurer, put their <em class="accent">full story</em> forward, and reached a better outcome than the fine print first suggested.</blockquote>
-          <div class="quote-meta"><span class="dotline"></span><div><b>Claims advocacy</b><span>Personal insurance</span></div></div>
+          <span class="cs-cat">Personal Insurance · Claims advocacy</span>
+          <h3 class="cs-title">The claim that shouldn't have been simple</h3>
+          <div class="cs-body">
+            <p>A self-employed tradesperson on the Sunshine Coast had held income protection for years without incident. When a back injury stopped them working, the insurer disputed the claim on the basis of a pre-existing condition disclosure.</p>
+            <p>PLNT reviewed the original policy, the medical history and the insurer's reasoning. The exclusion had been applied incorrectly under the policy terms. We put the case back to the insurer with a full written submission.</p>
+            <p>The claim was paid in full, covering four months of lost income.</p>
+          </div>
+          <blockquote class="cs-quote">"We didn't just sit between them and the insurer. We understood the policy better than the insurer did."</blockquote>
         </div>
         <div class="quote-slide">
-          <blockquote>We build retirement plans with pre-retirees, then review and adjust them year after year, so they can <em class="accent">focus on living</em> while we keep the plan on track.</blockquote>
-          <div class="quote-meta"><span class="dotline"></span><div><b>Ongoing advice</b><span>Retirement planning</span></div></div>
+          <span class="cs-cat">Retirement Planning · Ongoing advice</span>
+          <h3 class="cs-title">Retiring with a number, not a hope</h3>
+          <div class="cs-body">
+            <p>A couple in their late fifties came to PLNT unsure whether they could afford to retire at 62. They had super across multiple funds, a mortgage with four years left, and different views on what retirement should look like.</p>
+            <p>We consolidated their super, modelled three retirement scenarios, conservative, target and stretch, and built a transition-to-retirement strategy that used their working years more efficiently.</p>
+            <p>Eighteen months on, the mortgage was ahead of schedule, their super sat in a single fund with a clear mandate, and they had a written retirement date they both agreed on.</p>
+          </div>
+          <blockquote class="cs-quote">"They came in hoping. They left with a plan."</blockquote>
         </div>
         <div class="quote-slide">
-          <blockquote>When the decision is hard (when to retire, what aged care really costs, whether a big move stacks up) we <em class="accent">model it</em>, so you can decide with clarity.</blockquote>
-          <div class="quote-meta"><span class="dotline"></span><div><b>Strategic modelling</b><span>Advice for hard decisions</span></div></div>
+          <span class="cs-cat">Personal Insurance · Insurance review</span>
+          <h3 class="cs-title">When the defaults don't work</h3>
+          <div class="cs-body">
+            <p>A professional in her mid-thirties held default life and TPD cover through her industry super fund. On paper it looked fine: $400,000 life, $300,000 TPD.</p>
+            <p>On review, her actual income-replacement need was $1.1 million. She held no trauma cover, her income protection ran a 90-day wait with a two-year benefit, and the policy would lapse if she changed employers.</p>
+            <p>We rebuilt the structure with individually owned policies, tailored waiting periods, a five-year income protection benefit and trauma cover matched to her family. Total premium increase: $47 a fortnight.</p>
+          </div>
+          <blockquote class="cs-quote">"The gap between what she had and what she needed was wide. The cost to close it wasn't."</blockquote>
         </div>
       </div>
-      <div class="quote-nav" id="quoteNav" role="tablist" aria-label="Client stories">
+      <div class="quote-nav" id="quoteNav" role="tablist" aria-label="Case studies">
         <button class="active" aria-label="Story 1"></button>
         <button aria-label="Story 2"></button>
         <button aria-label="Story 3"></button>
       </div>
+      <p class="cs-disclaimer">Case studies are illustrative of the kind of work we do. Outcomes depend on individual circumstances and are not a guarantee of similar results.</p>
     </div>
   </div>
 </section>
@@ -774,7 +857,7 @@
     <div class="news-card reveal">
       <div>
         <h2>Good things grow in inboxes too</h2>
-        <p>A short seasonal note on markets, money and life on the Coast. No spam, unsubscribe anytime.</p>
+        <p>A short note, a few times a year. Market context, insurance reminders and life-planning prompts, from someone who thinks about this every day. No bulk sends, unsubscribe anytime.</p>
       </div>
       <form class="news-form" id="newsForm">
         <input type="email" required placeholder="Your email address" aria-label="Email address">
@@ -790,7 +873,7 @@
     <div>
       <span class="eyebrow reveal"><span class="ast">✱</span> Get in touch</span>
       <h2 class="reveal">Let's start the <em class="accent">conversation</em></h2>
-      <p class="contact-lede reveal">Call, email or send a message, whatever suits. We meet Coast-side or online, and we'll come back to you within one business day.</p>
+      <p class="contact-lede reveal">Call, email or send a message, whatever suits. We meet across the Coast and corridor, or online, and we'll come back to you within one business day.</p>
       <ul class="contact-list reveal">
         <li>
           <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M17.66 16.66L12 22.31l-5.66-5.65a8 8 0 1111.32 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span>
@@ -844,7 +927,10 @@
 <footer>
   <div class="container">
     <div class="footer-cta">
-      <h2>Let's grow something <em class="accent">good.</em></h2>
+      <div>
+        <h2>Let's grow something <em class="accent">good.</em></h2>
+        <p class="footer-cta-sub">Ready when you are. No obligation for the first conversation.</p>
+      </div>
       <a class="btn btn-cream" href="#contact">Book your free chat
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
       </a>
@@ -854,7 +940,7 @@
         <a class="logo" href="#top" aria-label="PLNT Financial home">
           <img src="img/plnt-logo-light.png" alt="PLNT Financial">
         </a>
-        <p>Financial advice with local roots and long-term thinking, proudly based on the Sunshine Coast, Queensland.</p>
+        <p>Personal insurance and financial advice for people building something. Based on the Sunshine Coast, working across the Gold Coast, Byron Bay and beyond.</p>
       </div>
       <div class="footer-cols">
         <div>
